@@ -88,8 +88,10 @@ db.once('open', function () {
 	console.log('Connected to mongodb server');
 });
 //mongoose.connect('mongodb://admin:Gch8feCFXPQj@test.testurl1.net:27017');
-_mongoose2.default.connect('mongodb://auctionAdmin:test5825@test.testurl1.net/auction');
+//mongoose.connect('mongodb://auctionAdmin:test5825@test.testurl1.net/auction');
 //mongoose.connect('mongodb://auction:10904a@ec2-52-78-94-134.ap-northeast-2.compute.amazonaws.com/auction');
+
+_mongoose2.default.connect('mongodb://auction:10904a@104.238.181.94:27017/auction');
 
 if (process.env.NODE_ENV == 'development') {
 	console.log('Server is running on development mode');
